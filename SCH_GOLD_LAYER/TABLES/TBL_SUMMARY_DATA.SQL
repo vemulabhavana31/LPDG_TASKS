@@ -1,6 +1,5 @@
 CREATE OR REPLACE TABLE SCH_GOLD_LAYER.SUMMARY_DATA (
-    summary_id VARCHAR(150),
-    total_count INT,
-    is_valid BOOLEAN,
-    summary_date DATE
+    ORDER_DATE DATE,
+    TOTAL_ORDERS INT,
+    TOTAL_PRODUCTS INT
 );
