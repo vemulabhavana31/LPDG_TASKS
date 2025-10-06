@@ -1,4 +1,4 @@
-create or replace schema SCH_GOLD_LAYER;
+---Creating table  to Store raw order data from various platforms
 CREATE  or REPLACE TABLE SCH_BRONZE_LAYER.RAW_DATA (
     "Order ID" VARCHAR,
     "Customer ID" VARCHAR,
@@ -13,6 +13,7 @@ CREATE  or REPLACE TABLE SCH_BRONZE_LAYER.RAW_DATA (
     "Refund Requested" VARCHAR 
 );
 
+-- Inserting sample raw data records
 INSERT INTO SCH_BRONZE_LAYER.RAW_DATA ("Order ID", "Customer ID", "Platform", "Order Date & Time", "Delivery Time (Minutes)", "Product Category", "Order Value (INR)", "Customer Feedback", "Service Rating", "Delivery Delay", "Refund Requested")
 VALUES
 ('ORD000001', 'CUST2824', 'JioMart', '19:29.5', 30, 'Fruits & Vegetables', 382.00, 'Fast delivery, great service!', 5, 'No', 'No'),
