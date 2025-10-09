@@ -9,8 +9,8 @@ CREATE  or REPLACE TABLE SCH_BRONZE_LAYER.RAW_DATA (
     "Order Value (INR)" NUMERIC(10, 2),
     "Customer Feedback" VARCHAR,
     "Service Rating" INT,
-    "Delivery Delay" VARCHAR,
-    "Refund Requested" VARCHAR 
+    "Delivery Delay" boolean,
+    "Refund Requested" boolean
 );
 
 -- Inserting sample raw data records
